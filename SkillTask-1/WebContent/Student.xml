@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="xsl" href="Student.xsl"?>
-<Students>
+<students>
 	<student sid="a">
 		<id>1900</id>
 		<name>Hima</name>
