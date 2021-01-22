@@ -1,0 +1,33 @@
+for DATABASE CREATION:
+
+create database EP_Skill;
+use EP_Skill;
+
+for TABLE CREATION:
+
+create table Employee1(id int primary key,name varchar(20),age int,dept varchar(5),salary int,designation varchar(20),dob date);
+
+for INSERTION:
+insert into Employee1 values(19003001,'himatha',25,'sales',15000,'executive','1992-08-09');
+insert into Employee1 values(19003002,'sree',30,'sales',20000,'staff','1990-07-09');
+insert into Employee1 values(19003003,'priyanka',35,'sales',25000,'staff','1989-03-09');
+insert into Employee1 values(1903004,'ramu',40,'sales',30000,'manager','1987-08-05');
+insert into Employee1 values(19003005,'sita',45,'sales',35000,'director','1985-06-09');
+
+for DISPLAYING TABLE:
+select * from Employee1;
+
+for UPDATION:
+update Employee1 set salary=12000 where id=19003003;
+
+for ALTER COMMAND:
+alter table Employee1 add(address varchar(20));
+
+for DELETION:
+delete from Employee1 where id=19003002;
+
+for UPDATION:
+update Employee1 set address='Vijayawada' where id=19003001;
+update Employee1 set address='Guntur' where id=1903002;
+update Employee1 set address='Eluru' where id=19003004;
+update Employee1 set address='Vijayawada' where id=19003005;
