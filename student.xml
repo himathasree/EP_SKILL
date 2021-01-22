@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<Students>
+	<student>
+		<regno>1900</regno>
+		<name>Himatha</name>
+		<marks>95</marks>
+		<email>h@gmail.com</email>
+	</student>
+	
+</Students>
