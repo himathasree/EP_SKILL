@@ -1,0 +1,46 @@
+<html>
+<title>LOGIN</title>
+<head>
+<script>
+function validation()
+{
+	var user=document.f1.user.value;
+	var pswd=document.f1.pswd.value;
+	if(user==null||user=="")
+	{
+		alert("enter the username");
+		return false;
+	}
+	else if(pswd==null||pswd=="")
+	{
+		alert("enter the password");
+		return false;
+	}
+	else if(user.length<8)
+	{
+		alert("length of the name must be with in 8");
+		return false;
+	}
+	else if(pswd.length<8)
+	{
+		alert("length of the password must be with in 8");
+		return false;
+	}
+	else if(user==pswd)
+	{
+		alert("welcome to name")
+		return false;
+	}
+}
+</script>
+</head>
+<body>
+<form name="f1" method="post" onsubmit="return validation()">
+<table align="center">
+<tr><td>Username:</td><td><input type:"text" name="user"><br></td></tr>
+<tr><td>Password:</td><td><input type="password" name="pswd"><br></td></tr>
+<tr><td><input type="submit" value="login"></td></tr>
+</table>
+</form>
+</body>
+</html>
